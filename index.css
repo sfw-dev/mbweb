@@ -272,7 +272,7 @@ h1, h2, h3, h4, p {
 }    
 .nav-list-style a {
 	text-decoration: none;
-	color: #19aa06;
+	color: gray;
 	font-size: 12px;	
 }
 footer {
