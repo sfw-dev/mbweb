@@ -34,7 +34,8 @@ h1, h2, h3, h4, p {
 
 /* NEW NAV SOLVED */
 .topnav {
-    background-color: #eaeaea;
+    background-color: #fbfbfd;
+    border-bottom: 1px solid #051f3a;
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -115,7 +116,7 @@ h1, h2, h3, h4, p {
     color: white; 
 }
 .cover-items h1 {
-    font-size: 40px;
+    font-size: 30px;
 }    
 .cover-items h2 {
     font-size: 20px;
@@ -133,15 +134,22 @@ h1, h2, h3, h4, p {
 }
 /* -----------------------------------------------------MOBILE BELOW COVER */
 .below-cover-section {
-    font-size: 30px;
-    text-align: center;
+    font-size: 16px;
+    font-weight:lighter;
+    text-align: left;
     color: #003366;
 }
+
+.below-cover-section h3 { 
+    font-weight:lighter;
+}
+
 .below-cover-section-title{
     padding: 60px 20px 30px 20px;
 }
 .below-cover-section-title p {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 600;
 }
 .below-cover-section-grid {
     display: block;
@@ -154,11 +162,11 @@ h1, h2, h3, h4, p {
     padding: 10px 10px 30px 10px;
 }
 .box-title-text{
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
+    font-size: 20px;
+    
+    text-align: left;
     color: #003366;  
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 .box-subtitle-text{
     font-size: 1.8rem;
@@ -245,16 +253,16 @@ h1, h2, h3, h4, p {
 }
 .footer-grid {
     display: block;
-    text-align: center;
+    /* text-align: center; */
     padding: 20px 20px 50px 20px;
 }
 .footer-title {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    color: white;
-    padding: 30px 0 10px 0;
-    border-bottom: 2px solid #19aa06;
-    text-align: center;
+    color: #FBFBFD;
+    padding: 20px 0 10px 0;
+    /* border-bottom: 2px solid #19aa06;
+    text-align: center; */
 }
 .nav-list-style {
     padding-left: 0;     
@@ -264,19 +272,34 @@ h1, h2, h3, h4, p {
 }    
 .nav-list-style a {
 	text-decoration: none;
-	color: #FBFBFD;
-	font-size: 1.6rem;	
+	color: #19aa06;
+	font-size: 12px;	
 }
 footer {
-    display: flex;
-	justify-content: center;
-	text-align: center;
+    display: block;
 	color: white;
-	font-size: 1.6rem;
+	font: 12px;
 	background-color:  #051f3a;
-	border-bottom: 10px solid #06284b;
-	padding: 10px 0; 
+    padding: 30px 20px;
 }
+
+
+.terms {
+    display: flex;
+    text-align: left;
+}
+ 
+
+.footer a {
+    padding: 20px 10px 10px 0;
+    text-decoration: none;
+    
+    color: gray;
+}
+
+
+
+
 /* --------------------------------------------------------DESKTOP VERSION */
 /* --------------------------------------------------------DESKTOP COVER */
 @media only screen and (min-width: 768px) {
@@ -427,6 +450,7 @@ footer {
 
     .footer-grid-brand-item {
         grid-column: 1;
+        padding-bottom: 50px;
     }
     .footer-grid-who-we-are-item {
         grid-column: 2;
