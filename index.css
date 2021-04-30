@@ -138,6 +138,7 @@ h1, h2, h3, h4, p {
     font-weight:lighter;
     text-align: left;
     color: #003366;
+    padding-bottom: 50px;
 }
 
 .below-cover-section h3 { 
@@ -192,10 +193,51 @@ h1, h2, h3, h4, p {
 }
 
 /* -----------------------------------------------------MOBILE PRODUCT SECTION */
+
+/* ADDED - April 30 */
+
+.gdesign img {
+    height: 300px;
+    width: 100%;
+}
+
+.gdesign {
+    background-color: #FBFBFD;
+}
+
+
+.gdesign ul {
+    font-size: 16px;
+}
+
+.imagep {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gtext {
+    padding: 0 20px;
+}
+
+.gtitle {
+    color: #051f3a;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.gsub {
+    font-size: 16px;
+
+}
+
+/*  */
+
 .product-section-title {
     font-size: 30px;
     text-align: left;
-    color: #003366;
+    background-color: #ededf7;
+    color:#051f3a;
     padding: 30px 20px;
 }
 .product-section-title p {
@@ -293,7 +335,6 @@ footer {
 .footer a {
     padding: 20px 10px 10px 0;
     text-decoration: none;
-    
     color: gray;
 }
 
