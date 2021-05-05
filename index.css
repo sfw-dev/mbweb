@@ -112,7 +112,7 @@ h1, h2, h3, h4, p {
 
 
 .dd{
-    display: flex;
+    display: block;
     background-color: rgb(43, 40, 40);
     color: white;
     height: 30vh;
