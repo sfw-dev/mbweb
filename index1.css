@@ -158,10 +158,6 @@ display: flex;}
     /* text-transform: uppercase; */
 }
 
-.offer h3 {
-    /* border-bottom: 3px solid white; */
-}
-
 /* -------------------------ROW-3 */
 
 .row3 {
@@ -283,12 +279,16 @@ footer {
 	color: gray;
 	font-size: 12px;
 	background-color: rgb(43, 40, 40) ;
-    padding: 20px 0 0px 0;   
+    padding: 20px 0 0 0;   
 }
 
 .footer-items {
     border-top: 1px solid grey;
     padding-top: 20px;
+}
+
+.footer-items p {
+    padding-left: 20px ;
 }
 
 .logo {
