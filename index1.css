@@ -82,6 +82,9 @@ display: flex;}
 .push {
     margin-left: auto;
 }
+.fa {
+    color: red;
+}
 
   /* When the screen is less than 960 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width:  1018px) {
@@ -119,6 +122,7 @@ display: flex;}
     color: white;
     padding: 100px 20px;
     margin-top: 69px;
+    
 }
 .cover h1 {
     font-size: 40px;
