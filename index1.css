@@ -33,7 +33,7 @@ h1, h2, h3, h4, p {
 }
 .topnav {
     background-color: #fbfbfd;
-    border-bottom: 1px solid #051f3a;
+    border-bottom: 1px solid grey;
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -118,21 +118,24 @@ display: flex;}
     background-color: rgb(43, 40, 40);
     color: white;
     padding: 100px 20px;
+    margin-top: 69px;
 }
 .cover h1 {
     font-size: 40px;
-    border-right: 3px solid white;  
+    border-left: 5px solid white;
+    padding-left: 20px;  
 }
 
 /* ------------------------ROW-1 */
 
 .about {
-    padding: 50px 0;
+    padding: 50px 0 50px 20px;
     font-size: 16px;
     background-color: whitesmoke;
 }
 
 .about h2 {
+    
     font-weight: 900;
     font-size: 24px;
     padding-bottom: 10px;
@@ -150,7 +153,10 @@ display: flex;}
     /* text-transform: uppercase; */
 }
 
-.offer h3 {border-right: 3px solid white;}
+.offer h3 {
+    border-left: 5px solid white;
+    padding-left: 20px ;
+}
 
 /* -------------------------ROW-3 */
 
@@ -163,10 +169,8 @@ display: flex;}
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     background-color: #FBFBFD;
-    
-    
 }
 
 .row3-design-image {
@@ -185,7 +189,7 @@ display: flex;}
     grid-column: 1;
     grid-row: 1;
     align-self: center;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .title {
@@ -200,12 +204,36 @@ display: flex;}
 }
 
 .btn-1 {
-    background-color: black;
+    background-color: rgb(43, 40, 40);
     color: white;
     border: none;
     padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
+@media only screen and (min-width: 300px) {
+    .row3-container {
+        display: block;
+        margin: 40px 10px;
+        padding-bottom: 20px;
+        border-radius: 6px;  
+    }
+    .row3-design-image {
+        margin: 20px 0;
+    }
+    .row3-design-image img {
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        border-radius: 6px 6px 0px 0px;
+    }
+    .first-container {
+        margin-top: 10px;
+    }
+    .btn-1 {
+        width: 100%;
+        font-size: 16px;
+    }
+}
 /* ---------------------------------------------FOOTER-SECTION */
 
 .footer-section {
@@ -272,6 +300,13 @@ footer {
 }
 
  
-
+@media only screen and (min-width: 300px) {
+    .footer-container {
+        display: block;
+    }
+    .footer-col {
+        padding: 20px;
+    }
+}
 
 
