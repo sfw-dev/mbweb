@@ -306,6 +306,9 @@ footer {
     .footer-col {
         padding: 20px;
     }
+    .footer-contact a {
+        display: inline-flex;
+    }
 }
 
 
