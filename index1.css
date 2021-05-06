@@ -170,6 +170,7 @@ display: flex;}
     grid-template-rows: 1fr;
     /* border: 1px solid gray; */
     background-color: #FBFBFD;
+    
 }
 
 .row3-design-image {
@@ -219,7 +220,8 @@ display: flex;}
         display: block;
         margin: 10px 20px;
         padding-bottom: 20px;
-        border-radius: 6px;  
+        border-radius: 6px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
     }
     
     .row3-design-image img {
