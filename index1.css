@@ -273,7 +273,7 @@ display: flex;}
     
 }
 
-.footer-contact a {display: flex;}
+.footer-contact a {display: inline-flex;}
 
 footer {
     display: block;
