@@ -269,8 +269,8 @@ display: flex;}
 
 .footer-contact img {
     width: 20px;
-    padding-left: 5px;
-    
+    height: unset;
+    padding-left: 10px;   
 }
 
 .footer-contact a {display: inline-flex;}
