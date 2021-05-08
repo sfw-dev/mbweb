@@ -129,7 +129,7 @@ display: flex;}
 }
 /* ------------------------ROW-1 */
 .about {
-    padding: 50px 20px;
+    padding: 20px;
     font-size: 16px;
     background-color: #FBFBFD;
     color: gray; 
@@ -143,12 +143,19 @@ display: flex;}
 }
 .about-grid {
     display: flex;
-    background-color: #FBFBFD;
-    padding: 50px 20px;
+    background-color: #FBFBFD;  
 }
 .about-image {
     display: none;
 }
+
+/* -------------------------MQ Test - Size 2 */
+@media only screen and (min-width: 335px) {
+    .about {
+        padding: 40px 20px;
+    }
+}   
+
 /* ------------------------ROW-2 */
 .offer {
     background-color:  rgb(43, 40, 40);
@@ -164,12 +171,12 @@ display: flex;}
 .offer-sub p {
     font-size: 20px;
     color: gray;
-
 }
+
 /* -------------------------ROW-3 */
 .row3 {
     background-color: whitesmoke;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 .row3-container {
     display: block;
@@ -220,13 +227,16 @@ display: flex;}
         background-image: url("about us.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+       
     }
     .about-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
         background-color: white;
+        
         padding: 50px 0;
+        
     }
     .about-text {
         grid-column: 1;
