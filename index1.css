@@ -17,7 +17,7 @@ h1, h2, h3, h4, p {
 }
 
 .maxsize {
-    max-width: 1500px;
+    max-width: 1400px;
     align-self: center;
     margin: auto;
 }
@@ -131,14 +131,25 @@ display: flex;}
 .about {
     padding: 50px 20px;
     font-size: 16px;
-    background-color: whitesmoke;
+    background-color: gray;
     color: gray; 
+    background-image: url("about us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .about h2 {
     font-weight: 900;
     font-size: 24px;
     padding-bottom: 10px;
     color: rgb(43, 40, 40);
+}
+.about-grid {
+    display: flex;
+    background-color: #FBFBFD;
+    padding: 50px;
+}
+.about-image {
+    display: none;
 }
 /* ------------------------ROW-2 */
 .offer {
@@ -150,6 +161,12 @@ display: flex;}
     color: white;
     padding: 20px;
     /* text-transform: uppercase; */
+}
+
+.offer-sub p {
+    font-size: 20px;
+    color: gray;
+
 }
 /* -------------------------ROW-3 */
 .row3 {
@@ -192,7 +209,7 @@ display: flex;}
     width: 100%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
     /* -----------------------COVER */
     .cover {padding: 200px 20px;}
     .cover h1 {
@@ -201,6 +218,30 @@ display: flex;}
         padding-left: 20px;  
     }
     /* ------------------------ROW-1 */
+    .about-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        background-color: white;
+        padding: 50px 0;
+    }
+    .about-text {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 50px;
+        align-self: center;
+    }
+    .about-image {
+        display: block;
+        grid-column: 2;
+        grid-row: 1;
+        margin-right: 20px;
+    }
+    .about-grid img {
+        height: 300px;
+        width: 100%;
+        
+    }
     .about {font-size: 18px;}
     .about h2 {font-size: 30px;}
     /* ------------------------ROW-2 */
@@ -208,8 +249,8 @@ display: flex;}
         font-size: 50px;
         padding: 30px 20px;
     }
-   
-    .row3{ padding: 50px 0;}
+    .offer-sub p {font-size: 24px;}
+    .row3{ padding: 10px 0;}
     .row3-container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -247,7 +288,7 @@ display: flex;}
     
     .btn-1 {
         background-color: #FBFBFD;
-        color: black;
+        color: gray;
         font-size: 18px;
         width: auto;
         transition: 0.2s;
@@ -256,12 +297,13 @@ display: flex;}
         grid-column: 1;
         grid-row: 2;
         align-self: flex-end;
+        margin-bottom: 20px;
            
     }
   
     .btn-move button:hover {
         font-size: 20px;
-        color: red;
+        color: rgb(43, 40, 40);
     }
 }
 /* ---------------------------------------------FOOTER-SECTION */
@@ -291,7 +333,7 @@ display: flex;}
 }
 .logo img {
     height: auto;
-    width: 200px;
+    width: 180px;
 }
 .footer-contact {padding-top: 10px;}
 .footer-contact a {display: inline-flex;}
@@ -327,7 +369,7 @@ footer {
 
 
  
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 800px) {
     .footer-container {
         display: flex;
         justify-content: space-between;
