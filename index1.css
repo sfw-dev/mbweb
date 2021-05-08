@@ -131,11 +131,9 @@ display: flex;}
 .about {
     padding: 50px 20px;
     font-size: 16px;
-    background-color: gray;
+    background-color: #FBFBFD;
     color: gray; 
-    background-image: url("about us.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .about h2 {
     font-weight: 900;
@@ -146,7 +144,7 @@ display: flex;}
 .about-grid {
     display: flex;
     background-color: #FBFBFD;
-    padding: 50px;
+    padding: 50px 20px;
 }
 .about-image {
     display: none;
@@ -218,6 +216,11 @@ display: flex;}
         padding-left: 20px;  
     }
     /* ------------------------ROW-1 */
+    .about {
+        background-image: url("about us.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .about-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
