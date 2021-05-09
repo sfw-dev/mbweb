@@ -38,7 +38,7 @@ h1, h2, h3, h4, p {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1; 
+    z-index: 1;
 }
 .topnav a {
     float: left;
@@ -73,9 +73,10 @@ h1, h2, h3, h4, p {
     justify-self: center;
 }
 
-
 .mobile-nav {
-display: flex;}
+    display: flex;
+    align-items: center; 
+}
 
 .nav-logo {
     margin: 0;
@@ -131,8 +132,11 @@ display: flex;}
 .about {
     padding: 20px;
     font-size: 16px;
-    background-color: #FBFBFD;
-    color: gray; 
+    /* background-color: #FBFBFD; */
+    color: white; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("wall.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .about h2 {
@@ -140,10 +144,12 @@ display: flex;}
     font-size: 24px;
     padding-bottom: 10px;
     color: rgb(43, 40, 40);
+    color: white;
+   
 }
 .about-grid {
     display: flex;
-    background-color: #FBFBFD;  
+    
 }
 .about-image {
     display: none;
@@ -155,6 +161,8 @@ display: flex;}
         padding: 40px 20px;
     }
 }   
+
+/*Small devices (portrait tablets and large phones, 600px and up) */
 
 /* ------------------------ROW-2 */
 .offer {
@@ -213,8 +221,12 @@ display: flex;}
     font-size: 16px;
     width: 100%;
 }
+.btn-move {
+    margin: 0 20px;
+}
 
-@media only screen and (min-width: 1000px) {
+/* TEST Large devices (laptops/desktops, 992px and up) -photo and video image breaking it's container */
+@media only screen and (min-width: 800px) {
     /* -----------------------COVER */
     .cover {padding: 200px 20px;}
     .cover h1 {
@@ -223,26 +235,30 @@ display: flex;}
         padding-left: 20px;  
     }
     /* ------------------------ROW-1 */
-    .about {
-        background-image: url("about us.jpg");
+    .about {         
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("wall.JPG");
+        /* https://www.shutterstock.com/image-photo/colorful-purple-blue-beige-brick-wall-560317225 */
         background-repeat: no-repeat;
         background-size: cover;
-       
+        color: white;
+        font-size: 24px;
+    }
+    .about h2 {
+        color: white;
     }
     .about-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
-        background-color: white;
-        
-        padding: 50px 0;
+        background: none;
+        padding: 100px 0;
         
     }
     .about-text {
         grid-column: 1;
         grid-row: 1;
         margin-left: 50px;
-        align-self: center;
+        align-self: center; 
     }
     .about-image {
         display: block;
@@ -255,8 +271,12 @@ display: flex;}
         width: 100%;
         
     }
-    .about {font-size: 18px;}
-    .about h2 {font-size: 30px;}
+    .about {
+        font-size: 24px;}
+    .about h2 {
+        font-size: 40px;
+        padding-bottom: 20px ;
+    }
     /* ------------------------ROW-2 */
     .offer {
         font-size: 50px;
