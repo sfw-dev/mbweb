@@ -134,10 +134,15 @@ h1, h2, h3, h4, p {
     font-size: 16px;
     /* background-color: #FBFBFD; */
     color: white; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("wall.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("wall.JPG");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-attachment: fixed;
+    /* background-position: center; */
+}
+.about-text {
+    padding-right: 10px;
+    /* need another mq to style small vs med mobile */
 }
 .about h2 {
     font-weight: 900;
@@ -145,7 +150,6 @@ h1, h2, h3, h4, p {
     padding-bottom: 10px;
     color: rgb(43, 40, 40);
     color: white;
-   
 }
 .about-grid {
     display: flex;
@@ -158,7 +162,7 @@ h1, h2, h3, h4, p {
 /* -------------------------MQ Test - Size 2 */
 @media only screen and (min-width: 335px) {
     .about {
-        padding: 40px 20px;
+        padding: 80px 20px;
     }
 }   
 
@@ -167,15 +171,18 @@ h1, h2, h3, h4, p {
 /* ------------------------ROW-2 */
 .offer {
     background-color:  rgb(43, 40, 40);
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    /* border-top: 5px solid black;
+    border-bottom: 5px solid black; */
     font-size: 30px;
     font-weight: 600;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     /* text-transform: uppercase; */
 }
-
+.offer h3 {
+    
+    margin-right: 100px;
+}
 .offer-sub p {
     font-size: 20px;
     color: gray;
@@ -200,7 +207,12 @@ h1, h2, h3, h4, p {
     height: auto;
     width: 100%;
     border-radius: 6px 6px 0px 0px;
+    transition: 0.2s;
 }
+.row3-design-image img:hover {
+    opacity: 0.7;
+    width: 102%;
+}  
 .row3-text {padding: 0 20px;}
 .title {
     font-size: 24px;
@@ -220,10 +232,12 @@ h1, h2, h3, h4, p {
     border-radius: 3px;
     font-size: 16px;
     width: 100%;
+    transition: 0.2s;
 }
 .btn-move {
     margin: 0 20px;
 }
+
 
 /* TEST Large devices (laptops/desktops, 992px and up) -photo and video image breaking it's container */
 @media only screen and (min-width: 800px) {
@@ -236,7 +250,7 @@ h1, h2, h3, h4, p {
     }
     /* ------------------------ROW-1 */
     .about {         
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("wall.JPG");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("wall.JPG");
         /* https://www.shutterstock.com/image-photo/colorful-purple-blue-beige-brick-wall-560317225 */
         background-repeat: no-repeat;
         background-size: cover;
@@ -257,7 +271,7 @@ h1, h2, h3, h4, p {
     .about-text {
         grid-column: 1;
         grid-row: 1;
-        margin-left: 50px;
+        /* margin-left: 50px; */
         align-self: center; 
     }
     .about-image {
@@ -280,7 +294,7 @@ h1, h2, h3, h4, p {
     /* ------------------------ROW-2 */
     .offer {
         font-size: 50px;
-        padding: 30px 20px;
+        padding: 50px 20px;
     }
     .offer-sub p {font-size: 24px;}
     .row3{ padding: 10px 0;}
@@ -337,6 +351,17 @@ h1, h2, h3, h4, p {
     .btn-move button:hover {
         font-size: 20px;
         color: rgb(43, 40, 40);
+        margin-left: 10px;
+    }
+    .arrow {
+        border: solid gray;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+    }
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
     }
 }
 /* ---------------------------------------------FOOTER-SECTION */
