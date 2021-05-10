@@ -137,8 +137,6 @@ h1, h2, h3, h4, p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("wall.JPG");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    /* background-position: center; */
 }
 .about-text {
     padding-right: 10px;
@@ -179,10 +177,6 @@ h1, h2, h3, h4, p {
     padding: 40px 20px;
     /* text-transform: uppercase; */
 }
-.offer h3 {
-    
-    margin-right: 100px;
-}
 .offer-sub p {
     font-size: 20px;
     color: gray;
@@ -207,11 +201,7 @@ h1, h2, h3, h4, p {
     height: auto;
     width: 100%;
     border-radius: 6px 6px 0px 0px;
-    transition: 0.2s;
-}
-.row3-design-image img:hover {
-    opacity: 0.7;
-    width: 102%;
+    
 }  
 .row3-text {padding: 0 20px;}
 .title {
@@ -256,6 +246,7 @@ h1, h2, h3, h4, p {
         background-size: cover;
         color: white;
         font-size: 24px;
+        background-attachment: fixed;
     }
     .about h2 {
         color: white;
