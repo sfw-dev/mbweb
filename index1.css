@@ -17,7 +17,7 @@ h1, h2, h3, h4, p {
 }
 
 .maxsize {
-    max-width: 1400px;
+    max-width: 1100px;
     align-self: center;
     margin: auto;
 }
@@ -53,6 +53,7 @@ h1, h2, h3, h4, p {
     background-color: #eaebf3fb;
     color: black;
 }
+
 /* .topnav a.active {
   background-color: #051f3a;
   color: white;
@@ -65,7 +66,6 @@ h1, h2, h3, h4, p {
     height: auto;
     width: 200px;
 }
-
 
 .flex img {
     display: flex;
@@ -84,8 +84,6 @@ h1, h2, h3, h4, p {
 .push {
     margin-left: auto;
 }
-
-
   /* When the screen is less than 960 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width:  1018px) {
     .topnav a:not(:first-child) {display: none;}
@@ -112,29 +110,27 @@ h1, h2, h3, h4, p {
         display: block;
     }
   }
-
 /* -----------------------------------SECTION */
-
 /* -----------------------COVER */
 .cover {
     display: block;
     background-color: rgb(43, 40, 40);
     color: white;
-    padding: 100px 20px;
+    padding: 80px 20px;
     margin-top: 69px; 
 }
 .cover h1 {
     font-size: 40px;
-    border-left: 5px solid white;
+    border-left: 2px solid #f8385a;
     padding-left: 20px;  
 }
+
 /* ------------------------ROW-1 */
 .about {
-    padding: 20px;
+    padding: 50px 20px;
     font-size: 16px;
-    /* background-color: #FBFBFD; */
     color: white; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("wall.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("brick.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -144,28 +140,13 @@ h1, h2, h3, h4, p {
 }
 .about h2 {
     font-weight: 900;
-    font-size: 24px;
-    padding-bottom: 10px;
-    color: rgb(43, 40, 40);
+    font-size: 30px;
+    padding-bottom: 20px;
     color: white;
 }
-.about-grid {
-    display: flex;
-    
-}
-.about-image {
-    display: none;
-}
-
-/* -------------------------MQ Test - Size 2 */
-@media only screen and (min-width: 335px) {
-    .about {
-        padding: 80px 20px;
-    }
-}   
-
+.about-grid {display: flex; }
+.about-image {display: none;}
 /*Small devices (portrait tablets and large phones, 600px and up) */
-
 /* ------------------------ROW-2 */
 .offer {
     background-color:  rgb(43, 40, 40);
@@ -176,13 +157,11 @@ h1, h2, h3, h4, p {
     font-weight: 600;
     color: white;
     padding: 40px 20px;
-    /* text-transform: uppercase; */
 }
 .offer-sub p {
     font-size: 20px;
     color: gray;
 }
-
 /* -------------------------ROW-3 */
 .row3 {
     background-color: whitesmoke;
@@ -208,7 +187,7 @@ h1, h2, h3, h4, p {
 .title {
     font-size: 24px;
     font-weight: 800;
-    padding: 5px 0;
+    padding: 10px 0 5px 0;
 }
 .subtitle {
     font-size: 16px;
@@ -230,64 +209,40 @@ h1, h2, h3, h4, p {
 }
 
 
-/* TEST Large devices (laptops/desktops, 992px and up) -photo and video image breaking it's container */
-@media only screen and (min-width: 800px) {
-    /* -----------------------COVER */
-    .cover {padding: 200px 20px;}
-    .cover h1 {
-        font-size: 60px;
-        border-left: 5px solid white;
-        padding-left: 20px;  
-    }
-    /* ------------------------ROW-1 */
-    .about {         
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("wall.JPG");
-        /* https://www.shutterstock.com/image-photo/colorful-purple-blue-beige-brick-wall-560317225 */
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
+  /* ---------------------------------------------------------tablets and large screen phones */
+  @media screen and (min-width:  600px) {
+    .active img { height: auto; width: 250px;}
+    .cover {padding: 180px 20px;}
+    .cover h1 {font-size: 60px;}
+    .about h2 {font-size: 30px;}
+    .about {font-size: 20px;}
+    .offer h3 {font-size: 60px;}
+    .title {font-size: 30px;}
+    .subtitle {font-size: 20px;}
+    .btn-1 {font-size: 20px;}
+}
+
+ /* ---------------------------------------------------------tablets and large screen phones */
+@media screen and (min-width:  1000px) {
+    .about {
         font-size: 24px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("brick.jpg");
         background-attachment: fixed;
     }
     .about h2 {
-        color: white;
+        font-size: 40px;
+        padding-bottom: 20px;
     }
     .about-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto;
-        background: none;
         padding: 100px 0;
-        
     }
     .about-text {
         grid-column: 1;
-        grid-row: 1;
-        /* margin-left: 50px; */
         align-self: center; 
     }
-    .about-image {
-        display: block;
-        grid-column: 2;
-        grid-row: 1;
-        margin-right: 20px;
-    }
-    .about-grid img {
-        height: 300px;
-        width: 100%;
-        
-    }
-    .about {
-        font-size: 24px;}
-    .about h2 {
-        font-size: 40px;
-        padding-bottom: 20px ;
-    }
-    /* ------------------------ROW-2 */
-    .offer {
-        font-size: 50px;
-        padding: 50px 20px;
-    }
+    .offer {padding: 50px 20px;}
     .offer-sub p {font-size: 24px;}
     .row3{ padding: 10px 0;}
     .row3-container {
@@ -296,7 +251,6 @@ h1, h2, h3, h4, p {
         grid-template-rows: auto auto;
         margin: 20px auto;
         padding: 0;
-        /* border: 1px solid gray; */
         border-radius: 0;
         box-shadow: none;
     }
@@ -323,7 +277,6 @@ h1, h2, h3, h4, p {
         margin: 20px;  
     }
     .title {font-size: 40px;}
-    .subtitle {font-size: 18px;}
     
     .btn-1 {
         background-color: #FBFBFD;
@@ -339,7 +292,6 @@ h1, h2, h3, h4, p {
         margin-bottom: 20px;
            
     }
-  
     .btn-move button:hover {
         font-size: 20px;
         color: rgb(43, 40, 40);
@@ -356,6 +308,7 @@ h1, h2, h3, h4, p {
         -webkit-transform: rotate(-45deg);
     }
 }
+
 /* ---------------------------------------------FOOTER-SECTION */
 
 .footer-section {
@@ -379,11 +332,11 @@ h1, h2, h3, h4, p {
 }
 .logo {
     margin: 0;
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
 }
 .logo img {
     height: auto;
-    width: 180px;
+    width: 250px;
 }
 .footer-contact {padding-top: 10px;}
 .footer-contact a {display: inline-flex;}
